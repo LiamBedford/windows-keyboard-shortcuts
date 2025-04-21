@@ -20,10 +20,13 @@ That’s when I discovered AutoHotKey — a much more powerful, flexible, and fr
 	A helper script I use to reload the keybindings script, especially useful when shortcuts stop working after interacting with admin windows.
 
 ## Getting Started
-Install AutoHotKey v2
-Clone or download this repo.
-Edit keybindings_script.ahk with the correct paths for your applications and add additional if you would like.
-Run runKeybindings_script.ahk to apply the remappings.
+- Install AutoHotKey v2
+  	- https://www.autohotkey.com/
+  	- winget install AutoHotKey.AutoHotKey
+  	- Microsoft Store
+- Clone or download this repo.
+- Edit keybindings_script.ahk with the correct paths for your applications and add additional if you would like.
+- Run runKeybindings_script.ahk to apply the remappings.
 
 ### Optional
 Create shortcuts for the .ahk files and add them to %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
