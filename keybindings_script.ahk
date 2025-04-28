@@ -21,6 +21,9 @@ RAlt & v::Run("path to VS Code")
 ;Remap right_alt+t to open Terminal
 RAlt & t::Run("path to windows terminal")
 
+;Remap right_alt+n to open NordVPN
+RAlt & n::Run("path to NordVPN")
+
 ;Vim Keybindings Global
 LAlt & h::Send("{Left}")
 LAlt & j::Send("{Down}")
