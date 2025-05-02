@@ -6,10 +6,8 @@
 ;Keyboard Remaps
 ;=========================================================================================================================================
 
-;Set Caps Lock to always off
-;SetCapsLockState "AlwaysOff"
-
-;Set Caps Lock to Esc (for vim purposes)
+;Set Caps Lock to always off and then remap it to Esc for Vim purposes
+SetCapsLockState "AlwaysOff"
 CapsLock::Esc
 
 ;Set Num Lock to always on
