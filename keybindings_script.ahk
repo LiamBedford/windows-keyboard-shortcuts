@@ -7,7 +7,10 @@
 ;=========================================================================================================================================
 
 ;Set Caps Lock to always off
-SetCapsLockState "AlwaysOff"
+;SetCapsLockState "AlwaysOff"
+
+;Set Caps Lock to Esc (for vim purposes)
+CapsLock::Esc
 
 ;Set Num Lock to always on
 SetNumLockState "AlwaysOn"
