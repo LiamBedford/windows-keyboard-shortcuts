@@ -12,6 +12,16 @@ CapsLock::Esc
 
 ;Set Num Lock to always on
 SetNumLockState "AlwaysOn"
+NumLock::
+{
+   Send("{Alt down}")
+    while GetKeyState("NumLock", "P")
+    {
+        Send("{Tab}")
+        Sleep(300)  ; Adjust delay for cycling speed
+    }
+    Send("{Alt up}") 
+}
 
 ;Remap Windows+q to alt+F4
 LAlt & q::WinClose "A"
@@ -25,18 +35,26 @@ RAlt & t::Run("path to windows terminal")
 ;Remap right_alt+n to open NordVPN
 RAlt & n::Run("path to NordVPN")
 
+;=========================================================================================================================================
 ;Vim Keybindings Global
+;=========================================================================================================================================
+
 LAlt & h::Send("{Left}")
 LAlt & j::Send("{Down}")
 LAlt & k::Send("{Up}")
 LAlt & l::Send("{Right}")
 
+;=========================================================================================================================================
 ;Browser Remaps
+;=========================================================================================================================================
+
 Shift & XButton1::Send("{Shift down}{Ctrl down}{n down}{Shift up}{Ctrl up}{n up}") ;New incognito window
 Shift & XButton2::Send("{Ctrl down}{n down}{Ctrl up}{n up}") ;New window
 LAlt & Numpad0::Run("add url to Jira") ;Open personal Jira
 
+;=========================================================================================================================================
 ;Support Shortcuts
+;=========================================================================================================================================
 
 LAlt & NumpadDiv::Send "Please let me know when you are available for me to assist🙂"
 
